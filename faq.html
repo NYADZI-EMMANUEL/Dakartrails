@@ -9,6 +9,7 @@
 </head>
 <body class="m-0">
 <main>
+
    <div class="bg-gray-950 p-2.5 overflow-hidden roboto">
         <ul class="flex gap-7 font-semibold whitespace-nowrap animate-infinite-scroll">
             <li>
@@ -198,6 +199,29 @@
             </a>
         </div>
     </header>
+     <section class="relative w-full h-[500px] p-[40px] overflow-hidden">
+        <video 
+            autoplay 
+            loop 
+            muted 
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover z-0"
+        >
+            <source src="/./src/assets/images/Presentation2.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-black/30 z-1"></div>
+        <div class="relative z-10 h-full flex gap-2 items-center pl-15">
+            <div class="p-5 bg-gray-900 w-120 text-white text-4xl flex flex-col gap-3 font-extrabold ">
+                <p>Prochain evenement : <br>L’Aventure au Saloum</p>
+                <p>4eme Edition <br> 13 et 14 déc 2025</p>
+                <p>Inscriptions bientot <br> ouvertes. </p>
+            </div>
+            <div>
+                <a href="#"><img src="./src/assets/images/appstore.png" alt="" class="w-20"></a>
+                <a href="#"><img src="./src/assets/images/google-play-icon-958x1024-scyukz7k-80x80.png" alt="" class="w-15 ml-3"></a>
+            </div>
+        </div>
+    </section>
 
     <section class="w-full flex flex-col">
         <div class="flex flex-col  w-full p-10">
@@ -297,7 +321,7 @@
         </div>
         </div>
     </section>
-    <footer class=" w-full flex p-10 opacity-95 text-sm bg-gray-950 text-white text-shadow-md justify-between ">
+   <footer class=" w-full flex p-10 opacity-95 text-xl bg-gray-950 text-white text-shadow-md justify-between ">
         <div class="flex flex-col gap-10">
             <img src="src/assets/images/logo-membre-itra-2024-200x200.png" alt="" >
             <div class="flex gap-3">
@@ -307,23 +331,26 @@
         </div>
         <div class="flex flex-col   gap-5 libertinus-serif-regular ">
             <p>Inscription</p>
-            <div >
-                <li><a href="contact.html" class="underline hover:no-underline">Inscription simple</a></li>
-                <li> <a href="contact.html" class="underline hover:no-underline">Inscription avec package</a></li>
-                <li> <a href="contact.html" class="underline hover:no-underline">Liste des participants</a></li>
+            <div class="flex flex-col   gap-2 ml-3" >
+                <a href="contact.html" >Inscription simple</a>
+                <a href="contact.html" >Inscription avec package</a>
+                <a href="contact.html" >Liste des participants</a>
+               
             </div>
         </div>
         <div class="flex flex-col   gap-5 libertinus-serif-regular ">
             <p>Règlement</p>
-            <div>
-                <li><a href="contact.html" class="underline hover:no-underline">Règlement</a></li>
+            <div class="flex flex-col   gap-2 ml-3">
+                <a href="contact.html" >Règlement</a>
+                
             </div>
         </div>
         <div class="flex flex-col   gap-5 libertinus-serif-regular ">
             <p>Contact</p>
-            <div>
-                <li><a href="contact.html" class="underline hover:no-underline">dakartrailsenegal@gmail.com</a></li>
-                <li><a href="contact.html" class="underline hover:no-underline">+221 77724 01 63</a></li>  
+            <div class="flex flex-col   gap-2 ml-3">
+                <a href="contact.html" >dakartrailsenegal@gmail.com</a>
+                <a href="contact.html">+221 77724 01 63</a>
+                
             </div>
             <div class="flex gap-2">
                     <a href="contact.html" class=" p-1 rounded-3xl bg-blue-700 hover:bg-black "><img src="/src/assets/images/facebook-f-brands-solid-full.svg" alt="" srcset=""  class="w-5  "></a>
