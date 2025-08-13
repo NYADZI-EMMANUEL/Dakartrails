@@ -10,12 +10,12 @@
 <body class="m-0">
 <main>
 
-   <div class="bg-gray-950 p-2.5 overflow-hidden roboto">
-        <ul class="flex gap-7 font-semibold whitespace-nowrap animate-infinite-scroll">
+    <div class="bg-gray-950 p-2.5 overflow-hidden roboto">
+        <ul class="flex gap-7 font-semibold whitespace-nowrap">
             <li>
                 <a href="#" class="text-white flex gap-2">
                     <div class="bg-white w-3 h-3 rounded-3xl my-auto"></div>
-                    <p>L'Aventure au Saloum 4eme Edition 13 et 14 déc 2025</p>
+                    <p>L'Aventure au Saloum 4ème Edition 13 et 14 déc 2025</p>
                 </a>
             </li>
             <li>
@@ -26,36 +26,43 @@
             </li>
         </ul>
     </div>
-    <div class="bg-white flex border-b border-gray-300 w-full pt-1 pb-1 pl-10 pr-10 justify-between">
-         <div class="flex gap-4  ">
-                    <p class="flex font-semibold  gap-1 "> <img src="/src/assets/images/phone-volume-solid-full.svg" alt="phone" srcset="" class="w-5 mx-auto"> <span class="mx-auto mt-1 text-sm">221 77 724 01 63</span></p>
-                    <p class="flex font-semibold  gap-1 "> <img src="/src/assets/images/clock-regular-full.svg" alt="clock" srcset="" class="w-5 mx-auto"><span class="mx-auto mt-1 text-sm">Lundi – Vendredi 10h – 18h</span></p>
-                </div>
+    <div class="bg-white hidden md:flex border-b border-gray-300 w-full pt-1 pb-1 pl-10 pr-10 justify-between">
+        <div class="flex gap-4">
+            <p class="flex font-semibold gap-1"> 
+                <img src="/src/assets/images/phone-volume-solid-full.svg" alt="phone" class="w-5 mx-auto"> 
+                <span class="mx-auto mt-1 text-sm">221 77 724 01 63</span>
+            </p>
+            <p class="flex font-semibold gap-1"> 
+                <img src="/src/assets/images/clock-regular-full.svg" alt="clock" class="w-5 mx-auto">
+                <span class="mx-auto mt-1 text-sm">Lundi – Vendredi 10h – 18h</span>
+            </p>
+        </div>
         <div class="flex gap-2">          
-                <div class="flex gap-2">
-                    <a href="index.html" class=" p-1 rounded-3xl bg-black "><img src="/src/assets/images/facebook-f-brands-solid-full.svg" alt="" srcset=""  class="w-5  "></a>
-                    <a href="index.html" class=" p-1 rounded-3xl bg-black   "><img src="/src/assets/images/x-twitter-brands-solid-full.svg" alt="" srcset=""  class="w-5 "></a>
-                    <a href="index.html" class=" p-1 rounded-3xl bg-black "><img src="src/assets/images/instagram-brands-solid-full.svg" alt="" srcset=""  class="w-5 "></a>
-                    <a href="index.html" class=" p-1 rounded-3xl bg-black "><img src="/src/assets/images/youtube-brands-solid-full.svg" alt="" srcset=""  class="w-5 "></a>
-                </div>
+            <div class="flex gap-2">
+                <a href="index.html" class="p-1 rounded-3xl bg-black"><img src="/src/assets/images/facebook-f-brands-solid-full.svg" alt="" class="w-5"></a>
+                <a href="index.html" class="p-1 rounded-3xl bg-black"><img src="/src/assets/images/x-twitter-brands-solid-full.svg" alt="" class="w-5"></a>
+                <a href="index.html" class="p-1 rounded-3xl bg-black"><img src="src/assets/images/instagram-brands-solid-full.svg" alt="" class="w-5"></a>
+                <a href="index.html" class="p-1 rounded-3xl bg-black"><img src="/src/assets/images/youtube-brands-solid-full.svg" alt="" class="w-5"></a>
+            </div>
         </div>
     </div>
     <header class="sticky top-0 z-20 shadow-xs w-full shadow-gray-200">
-        <div class="w-full pt-1 pb-1 pl-10 pr-10 flex justify-between roboto bg-white">
-            <img src="/src/assets/images/logo-header-dakartrails.png" alt="" srcset="" class="w-15 h-15">
-            <ul class="text-sm my-auto flex justify-center gap-6 text-gray-700">
+        <div class="w-full pt-1 pb-1 px-4 md:px-10 flex justify-between items-center roboto bg-white">
+            <img src="/src/assets/images/logo-header-dakartrails.png" alt="" class="w-15 h-15">
+            
+            <ul class="text-sm my-auto hidden lg:flex justify-center gap-6 text-gray-700">
                 <li>
-                    <a href="index.html" class="font-bold hover:border-b-4 border-gray-700 pb-1">Accueil</a>
+                    <a href="index.html" class="font-bold border-b-4 border-gray-700 pb-1">Accueil</a>
                 </li>
-                <li class="relative dropdown">
+                <li class="relative group">
                     <a href="#" class="font-bold hover:border-b-4 border-gray-700 pb-1 cursor-pointer">Événements</a>
-                    <ul class="dropdown-menu absolute left-0 mt-2 font-light text-xs p-2 w-60 bg-white shadow-sm shadow-gray-300 -ml-3 hidden">
-                        <li class="block submenu-container relative">
-                            <a href="#" class=" py-2 px-2  hover:bg-gray-50 flex justify-between items-center">
+                    <ul class="absolute left-0 mt-2 font-light text-xs p-2 w-60 bg-white shadow-sm shadow-gray-300 -ml-3 hidden group-hover:block">
+                        <li class="block relative group/sub">
+                            <a href="#" class="py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
                                 Ultras et Raids au sénégal 
                                 <span class="ml-2">></span>
                             </a>
-                            <ul class="submenu absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden p-2">
+                            <ul class="absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden group-hover/sub:block p-2">
                                 <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">Trail Découverte 26 km</a>
                                 </li>
@@ -67,27 +74,26 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="block submenu-container relative">
-                            <a href="#" class=" py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
+                        <li class="block relative group/sub">
+                            <a href="#" class="py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
                                 Dakar Endurance Trail 
                                 <span class="ml-2">></span>
                             </a>
-                            <ul class="submenu absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden p-2">
+                            <ul class="absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden group-hover/sub:block p-2">
                                 <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">DET 2x10KM</a>
                                 </li>
                                 <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">DEM 4x10KM</a>
                                 </li>
-                                
                             </ul>
                         </li>
-                        <li class="block submenu-container relative">
-                            <a href="#" class=" py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
+                        <li class="block relative group/sub">
+                            <a href="#" class="py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
                                 L'aventure au saloum 
                                 <span class="ml-2">></span>
                             </a>
-                            <ul class="submenu absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden p-2">
+                            <ul class="absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden group-hover/sub:block p-2">
                                 <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">Raid Saloum 1x42KM</a>
                                 </li>
@@ -98,16 +104,15 @@
                         </li>
                     </ul>
                 </li>
-                <li class="relative dropdown">
+                <li class="relative group">
                     <a href="#" class="font-bold hover:border-b-4 border-gray-700 pb-1 cursor-pointer">Participants</a>
-                    
-                    <ul class="dropdown-menu absolute left-0 mt-2 font-light text-xs p-2 w-60 bg-white shadow-sm shadow-gray-300 -ml-3 hidden">
-                        <li class="block submenu-container relative">
-                            <a href="#" class="py-2 px-2  hover:bg-gray-50 flex justify-between items-center">
+                    <ul class="absolute left-0 mt-2 font-light text-xs p-2 w-60 bg-white shadow-sm shadow-gray-300 -ml-3 hidden group-hover:block">
+                        <li class="block relative group/sub">
+                            <a href="#" class="py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
                                 UTDS 
                                 <span class="ml-2">></span>
                             </a>
-                            <ul class="submenu absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden p-2">
+                            <ul class="absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden group-hover/sub:block p-2">
                                 <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">Trail Découverte 26 km</a>
                                 </li>
@@ -121,15 +126,15 @@
                         </li>
                     </ul>
                 </li>
-                <li class="relative dropdown">
+                <li class="relative group">
                     <a href="#" class="font-bold hover:border-b-4 border-gray-700 pb-1 cursor-pointer">Résultats</a>
-                    <ul class="dropdown-menu absolute left-0 mt-2 font-light text-xs p-2 w-60 bg-white shadow-sm shadow-gray-300 -ml-3 hidden"> 
-                        <li class="block submenu-container relative ">
-                            <a href="#" class=" py-2 px-2  hover:bg-gray-50 flex justify-between items-center">
+                    <ul class="absolute left-0 mt-2 font-light text-xs p-2 w-60 bg-white shadow-sm shadow-gray-300 -ml-3 hidden group-hover:block"> 
+                        <li class="block relative group/sub">
+                            <a href="#" class="py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
                                 UTDS 
                                 <span class="ml-2">></span>
                             </a>
-                            <ul class="submenu absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden p-2">
+                            <ul class="absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden group-hover/sub:block p-2">
                                 <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">2021</a>
                                 </li>
@@ -139,7 +144,7 @@
                                 <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">2023</a>
                                 </li>
-                                 <li class="block">
+                                <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">2024</a>
                                 </li>
                                 <li class="block">
@@ -147,27 +152,26 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="block submenu-container relative">
-                            <a href="#" class=" py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
+                        <li class="block relative group/sub">
+                            <a href="#" class="py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
                                 L'aventure au saloum 
                                 <span class="ml-2">></span>
                             </a>
-                            <ul class="submenu absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden p-2">
+                            <ul class="absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden group-hover/sub:block p-2">
                                 <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">2023</a>
                                 </li>
-                                 <li class="block">
+                                <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">2024</a>
                                 </li>
-                                
                             </ul>
                         </li>
-                        <li class="block submenu-container relative">
-                            <a href="#" class=" py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
+                        <li class="block relative group/sub">
+                            <a href="#" class="py-2 px-2 hover:bg-gray-50 flex justify-between items-center">
                                 Dakar Endurance Trail 
                                 <span class="ml-2">></span>
                             </a>
-                            <ul class="submenu absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden p-2">
+                            <ul class="absolute left-full top-0 w-60 bg-white shadow-sm shadow-gray-300 ml-1 hidden group-hover/sub:block p-2">
                                 <li class="block">
                                     <a href="#" class="block py-2 px-4 hover:bg-gray-50">2025</a>
                                 </li>
@@ -179,7 +183,7 @@
                     <a href="application.html" class="font-bold hover:border-b-4 border-gray-700 pb-1">Application</a>
                 </li>
                 <li>
-                    <a href="faq.html" class="font-bold border-b-4 border-gray-700 pb-1">FAQ</a>
+                    <a href="faq.html" class="font-bold hover:border-b-4 border-gray-700 pb-1">FAQ</a>
                 </li>
                 <li>
                     <a href="origines.html" class="font-bold hover:border-b-4 border-gray-700 pb-1">Origines</a>
@@ -191,15 +195,141 @@
                     <a href="contact.html" class="font-bold hover:border-b-4 border-gray-700 pb-1">Contact</a>
                 </li>
             </ul>
-            <a href="#">
+            
+            <a href="#" class="hidden lg:block">
                 <button class="flex gap-1 bg-black text-white pt-2 pb-2 pl-4 mt-3 pr-4 roboto font-bold text-sm items-center">
                     Connexion
-                    <img src="/src/assets/images/user-solid-full.svg" alt="" srcset="" class="w-4 h-4 p-0.5 mt-0.5 bg-white rounded-3xl">
+                    <img src="/src/assets/images/user-solid-full.svg" alt="" class="w-4 h-4 p-0.5 mt-0.5 bg-white rounded-3xl">
                 </button>
             </a>
+            <button class="lg:hidden flex flex-col space-y-1" onclick="toggleMobileMenu()">
+                <span class="w-6 h-0.5 bg-gray-700"></span>
+                <span class="w-6 h-0.5 bg-gray-700"></span>
+                <span class="w-6 h-0.5 bg-gray-700"></span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-white z-50 transform -translate-x-full transition-transform duration-300">
+            <div class="flex justify-between items-center p-4 border-b">
+                <img src="/src/assets/images/logo-header-dakartrails.png" alt="" class="w-12 h-12">
+                <button onclick="toggleMobileMenu()" class="text-2xl text-gray-700">×</button>
+            </div>
+            <div class="p-4 space-y-4">
+                <a href="index.html" class="block font-bold text-lg text-gray-700 border-b pb-2">Accueil</a>
+                <div class="border-b pb-2">
+                    <button onclick="toggleSubmenu('events')" class="flex justify-between items-center w-full font-bold text-lg text-gray-700">
+                        Événements
+                        <span id="events-arrow" class="text-2xl">+</span>
+                    </button>
+                    <div id="events-submenu" class="hidden mt-2 ml-4 space-y-2">
+                        <div>
+                            <button onclick="toggleSubSubmenu('ultras')" class="flex justify-between items-center w-full text-gray-600 py-1">
+                                Ultras et Raids au sénégal
+                                <span id="ultras-arrow" class="text-xl">+</span>
+                            </button>
+                            <div id="ultras-submenu" class="hidden ml-4 mt-1 space-y-1">
+                                <a href="#" class="block text-sm text-gray-500 py-1">Trail Découverte 26 km</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">Trail Des Acacias 37 km</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">Ultra Trail Du Sénégal 86 km</a>
+                            </div>
+                        </div>
+                        <div>
+                            <button onclick="toggleSubSubmenu('endurance')" class="flex justify-between items-center w-full text-gray-600 py-1">
+                                Dakar Endurance Trail
+                                <span id="endurance-arrow" class="text-xl">+</span>
+                            </button>
+                            <div id="endurance-submenu" class="hidden ml-4 mt-1 space-y-1">
+                                <a href="#" class="block text-sm text-gray-500 py-1">DET 2x10KM</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">DEM 4x10KM</a>
+                            </div>
+                        </div>
+                        <div>
+                            <button onclick="toggleSubSubmenu('saloum')" class="flex justify-between items-center w-full text-gray-600 py-1">
+                                L'aventure au saloum
+                                <span id="saloum-arrow" class="text-xl">+</span>
+                            </button>
+                            <div id="saloum-submenu" class="hidden ml-4 mt-1 space-y-1">
+                                <a href="#" class="block text-sm text-gray-500 py-1">Raid Saloum 1x42KM</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">Raid Saloum Aventure 2x42KM</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-b pb-2">
+                    <button onclick="toggleSubmenu('participants')" class="flex justify-between items-center w-full font-bold text-lg text-gray-700">
+                        Participants
+                        <span id="participants-arrow" class="text-2xl">+</span>
+                    </button>
+                    <div id="participants-submenu" class="hidden mt-2 ml-4 space-y-2">
+                        <div>
+                            <button onclick="toggleSubSubmenu('utds-participants')" class="flex justify-between items-center w-full text-gray-600 py-1">
+                                UTDS
+                                <span id="utds-participants-arrow" class="text-xl">+</span>
+                            </button>
+                            <div id="utds-participants-submenu" class="hidden ml-4 mt-1 space-y-1">
+                                <a href="#" class="block text-sm text-gray-500 py-1">Trail Découverte 26 km</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">Trail Des Acacias 37 km</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">Ultra Trail Du Sénégal 86 km</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-b pb-2">
+                    <button onclick="toggleSubmenu('results')" class="flex justify-between items-center w-full font-bold text-lg text-gray-700">
+                        Résultats
+                        <span id="results-arrow" class="text-2xl">+</span>
+                    </button>
+                    <div id="results-submenu" class="hidden mt-2 ml-4 space-y-2">
+                        <div>
+                            <button onclick="toggleSubSubmenu('utds-results')" class="flex justify-between items-center w-full text-gray-600 py-1">
+                                UTDS
+                                <span id="utds-results-arrow" class="text-xl">+</span>
+                            </button>
+                            <div id="utds-results-submenu" class="hidden ml-4 mt-1 space-y-1">
+                                <a href="#" class="block text-sm text-gray-500 py-1">2021</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">2022</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">2023</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">2024</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">2025</a>
+                            </div>
+                        </div>
+                        <div>
+                            <button onclick="toggleSubSubmenu('saloum-results')" class="flex justify-between items-center w-full text-gray-600 py-1">
+                                L'aventure au saloum
+                                <span id="saloum-results-arrow" class="text-xl">+</span>
+                            </button>
+                            <div id="saloum-results-submenu" class="hidden ml-4 mt-1 space-y-1">
+                                <a href="#" class="block text-sm text-gray-500 py-1">2023</a>
+                                <a href="#" class="block text-sm text-gray-500 py-1">2024</a>
+                            </div>
+                        </div>
+                        <div>
+                            <button onclick="toggleSubSubmenu('endurance-results')" class="flex justify-between items-center w-full text-gray-600 py-1">
+                                Dakar Endurance Trail
+                                <span id="endurance-results-arrow" class="text-xl">+</span>
+                            </button>
+                            <div id="endurance-results-submenu" class="hidden ml-4 mt-1 space-y-1">
+                                <a href="#" class="block text-sm text-gray-500 py-1">2025</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="application.html" class="block font-bold text-lg text-gray-700 border-b pb-2">Application</a>
+                <a href="faq.html" class="block font-bold text-lg text-gray-700 border-b pb-2">FAQ</a>
+                <a href="origines.html" class="block font-bold text-lg text-gray-700 border-b pb-2">Origines</a>
+                <a href="ambassadeurs.html" class="block font-bold text-lg text-gray-700 border-b pb-2">Ambassadeurs</a>
+                <a href="contact.html" class="block font-bold text-lg text-gray-700 border-b pb-2">Contact</a>
+                
+                <a href="#" class="block mt-6">
+                    <button class="w-full flex gap-1 bg-black text-white pt-3 pb-3 pl-4 pr-4 roboto font-bold text-sm items-center justify-center">
+                        Connexion
+                        <img src="/src/assets/images/user-solid-full.svg" alt="" class="w-4 h-4 p-0.5 bg-white rounded-3xl">
+                    </button>
+                </a>
+            </div>
         </div>
     </header>
-     <section class="relative w-full h-[500px] p-[40px] overflow-hidden">
+     <section class="relative w-full pt-20 pb-20 h-[300px] sm:h-[400px] md:h-[500px] p-4 md:p-[40px] overflow-hidden">
         <video 
             autoplay 
             loop 
@@ -210,15 +340,15 @@
             <source src="/./src/assets/images/Presentation2.mp4" type="video/mp4">
         </video>
         <div class="absolute inset-0 bg-black/30 z-1"></div>
-        <div class="relative z-10 h-full flex gap-2 items-center pl-15">
-            <div class="p-5 bg-gray-900 w-120 text-white text-4xl flex flex-col gap-3 font-extrabold ">
-                <p>Prochain evenement : <br>L’Aventure au Saloum</p>
+        <div class="relative z-10 h-full flex flex-col md:flex-row gap-4 items-center justify-center md:justify-start md:pl-15">
+            <div class="p-4 md:p-5 bg-gray-900/90 w-full md:w-auto text-white text-xl md:text-xl lg:text-4xl flex flex-col gap-2 md:gap-3 font-extrabold">
+                <p>Prochain evenement : <br>L'Aventure au Saloum</p>
                 <p>4eme Edition <br> 13 et 14 déc 2025</p>
                 <p>Inscriptions bientot <br> ouvertes. </p>
             </div>
-            <div>
-                <a href="#"><img src="./src/assets/images/appstore.png" alt="" class="w-20"></a>
-                <a href="#"><img src="./src/assets/images/google-play-icon-958x1024-scyukz7k-80x80.png" alt="" class="w-15 ml-3"></a>
+            <div class="md:flex md:flex-col md:gap-2 flex gap-2">
+                <a href="#"><img src="./src/assets/images/appstore.png" alt="" class="w-10 md:w-10"></a>
+                <a href="#"><img src="./src/assets/images/google-play-icon-958x1024-scyukz7k-80x80.png" alt="" class="w-10 md:w-10"></a>
             </div>
         </div>
     </section>
@@ -321,45 +451,109 @@
         </div>
         </div>
     </section>
-   <footer class=" w-full flex p-10 opacity-95 text-xl bg-gray-950 text-white text-shadow-md justify-between ">
-        <div class="flex flex-col gap-10">
-            <img src="src/assets/images/logo-membre-itra-2024-200x200.png" alt="" >
-            <div class="flex gap-3">
-                <img src="src/assets/images/logo-header-dakartrails.png" alt="" class="w-10">
-                <p class="my-auto text-xs ">Dakar Trail 2024</p>
+   <footer class="w-full bg-gray-950 text-white opacity-95">
+        <div class="hidden lg:flex p-10 text-xl justify-between">
+            <div class="flex flex-col gap-10">
+                <img src="src/assets/images/logo-membre-itra-2024-200x200.png" alt="">
+            </div>
+            <div class="flex flex-col gap-5 libertinus-serif-regular">
+                <p>Inscription</p>
+                <div class="flex flex-col gap-2 ml-3">
+                    <a href="contact.html">Inscription simple</a>
+                    <a href="contact.html">Inscription avec package</a>
+                    <a href="contact.html">Liste des participants</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 libertinus-serif-regular">
+                <p>Règlement</p>
+                <div class="flex flex-col gap-2 ml-3">
+                    <a href="contact.html">Règlement</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 libertinus-serif-regular">
+                <p>Contact</p>
+                <div class="flex flex-col gap-2 ml-3">
+                    <a href="contact.html">dakartrailsenegal@gmail.com</a>
+                    <a href="contact.html">+221 77724 01 63</a>
+                </div>
+                <div class="flex gap-2">
+                    <a href="contact.html" class="p-1 rounded-3xl bg-blue-700 hover:bg-black"><img src="/src/assets/images/facebook-f-brands-solid-full.svg" alt="" class="w-5"></a>
+                    <a href="contact.html" class="p-1 rounded-3xl bg-yellow-800 hover:bg-black"><img src="src/assets/images/instagram-brands-solid-full.svg" alt="" class="w-5"></a>
+                    <a href="contact.html" class="p-1 rounded-3xl bg-green-700 hover:bg-black"><img src="/src/assets/images/whatsapp-brands-solid-full.svg" alt="" class="w-5"></a>
+                    <a href="contact.html" class="p-1 rounded-3xl bg-red-900 hover:bg-black"><img src="/src/assets/images/youtube-brands-solid-full.svg" alt="" class="w-5"></a>
+                </div>
             </div>
         </div>
-        <div class="flex flex-col   gap-5 libertinus-serif-regular ">
-            <p>Inscription</p>
-            <div class="flex flex-col   gap-2 ml-3" >
-                <a href="contact.html" >Inscription simple</a>
-                <a href="contact.html" >Inscription avec package</a>
-                <a href="contact.html" >Liste des participants</a>
-               
-            </div>
-        </div>
-        <div class="flex flex-col   gap-5 libertinus-serif-regular ">
-            <p>Règlement</p>
-            <div class="flex flex-col   gap-2 ml-3">
-                <a href="contact.html" >Règlement</a>
+        <div class="lg:hidden p-6">
+            <div class="flex flex-col items-center gap-4 mb-8">
+                <img src="src/assets/images/logo-membre-itra-2024-200x200.png" alt="" class="w-32">
                 
             </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-lg font-bold mb-3">Inscription</h3>
+                    <div class="space-y-2 text-sm">
+                        <a href="contact.html" class="block">Inscription simple</a>
+                        <a href="contact.html" class="block">Inscription avec package</a>
+                        <a href="contact.html" class="block">Liste des participants</a>
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-lg font-bold mb-3">Règlement</h3>
+                    <div class="space-y-2 text-sm">
+                        <a href="contact.html" class="block">Règlement</a>
+                    </div>
+                </div>
+            </div>>
+            <div class="mt-8 text-center">
+                <h3 class="text-lg font-bold mb-3">Contact</h3>
+                <div class="space-y-2 text-sm mb-4">
+                    <a href="contact.html" class="block">dakartrailsenegal@gmail.com</a>
+                    <a href="contact.html" class="block">+221 77724 01 63</a>
+                </div>
+                <div class="flex gap-3 justify-center">
+                    <a href="contact.html" class="p-2 rounded-3xl bg-blue-700 hover:bg-black"><img src="/src/assets/images/facebook-f-brands-solid-full.svg" alt="" class="w-5"></a>
+                    <a href="contact.html" class="p-2 rounded-3xl bg-yellow-800 hover:bg-black"><img src="src/assets/images/instagram-brands-solid-full.svg" alt="" class="w-5"></a>
+                    <a href="contact.html" class="p-2 rounded-3xl bg-green-700 hover:bg-black"><img src="/src/assets/images/whatsapp-brands-solid-full.svg" alt="" class="w-5"></a>
+                    <a href="contact.html" class="p-2 rounded-3xl bg-red-900 hover:bg-black"><img src="/src/assets/images/youtube-brands-solid-full.svg" alt="" class="w-5"></a>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-col   gap-5 libertinus-serif-regular ">
-            <p>Contact</p>
-            <div class="flex flex-col   gap-2 ml-3">
-                <a href="contact.html" >dakartrailsenegal@gmail.com</a>
-                <a href="contact.html">+221 77724 01 63</a>
-                
-            </div>
-            <div class="flex gap-2">
-                    <a href="contact.html" class=" p-1 rounded-3xl bg-blue-700 hover:bg-black "><img src="/src/assets/images/facebook-f-brands-solid-full.svg" alt="" srcset=""  class="w-5  "></a>
-                    <a href="contact.html" class=" p-1 rounded-3xl bg-yellow-800 hover:bg-black "><img src="src/assets/images/instagram-brands-solid-full.svg" alt="" srcset=""  class="w-5 "></a>
-                    <a href="contact.html" class=" p-1 rounded-3xl bg-green-700 hover:bg-black   "><img src="/src/assets/images/whatsapp-brands-solid-full.svg" alt="" srcset=""  class="w-5 "></a>
-                    <a href="contact.html" class=" p-1 rounded-3xl bg-red-900 hover:bg-black "><img src="/src/assets/images/youtube-brands-solid-full.svg" alt="" srcset=""  class="w-5 "></a>
-            </div>
+        <div class="flex ml-10 pb-5 gap-3">
+            <img src="src/assets/images/logo-header-dakartrails.png" alt="" class="w-10">
+            <p class="my-auto text-xs">Dakar Trail 2024</p>
         </div>
     </footer>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('-translate-x-full');
+        }
+
+        function toggleSubmenu(menuId) {
+            const submenu = document.getElementById(menuId + '-submenu');
+            const arrow = document.getElementById(menuId + '-arrow');
+            
+            submenu.classList.toggle('hidden');
+            arrow.textContent = submenu.classList.contains('hidden') ? '+' : '-';
+        }
+
+        function toggleSubSubmenu(menuId) {
+            const submenu = document.getElementById(menuId + '-submenu');
+            const arrow = document.getElementById(menuId + '-arrow');
+            
+            submenu.classList.toggle('hidden');
+            arrow.textContent = submenu.classList.contains('hidden') ? '+' : '-';
+        }
+
+        
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                const menu = document.getElementById('mobile-menu');
+                menu.classList.add('-translate-x-full');
+            });
+        });
+    </script>
 
       <script>
         function toggleFaq(index) {
